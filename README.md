@@ -18,21 +18,43 @@
 #### 3. Установка Git.
 
 #### 4. Настройка Git.
+```
+git config --global user.name "4414 Жариков М. С."
+git config --global user.email makareha86@gmail.com
+```
 ![Настройка](screenshots/4.png)
 
 #### 5. Клонирование своего репозитория.
+```
+git clone https://github.com/L1Me86/LR6.git
+```
 ![Клонирование](screenshots/5.png)
 
 #### 6. Добавление файла через GitHub. Обновление репозитория.
+```
+git pull
+```
 ![Обновление](screenshots/6.png)
 
 #### 7. Получение истории операций для каждой из веток.
+```
+git log
+git log master
+```
 ![Ветки](screenshots/7.png)
 
 #### 8. Просмотр последних изменений.
+```
+git show
+```
 ![Просмотр изменений](screenshots/8.png)
 
 #### 9. Выполнение слияние в ветку master, решение конфликта.
+```
+git merge branch1
+git commit -m "Решен конфликт"
+git push
+```
 ![1-я попытка слияния](screenshots/9.png)
 ![Решение конфликта](screenshots/9_1.png)
 ![Решение конфликта](screenshots/9_2.png)
@@ -40,17 +62,34 @@
 ![Пуш](screenshots/9_4.png)
 
 #### 10. Удаление побочной ветки.
+```
+git push origin --delete btanch1
+```
 ![Удаление ветки](screenshots/10.png)
 
 #### 11. Создание и фиксирование изменений.
+```
+echo "1-е изменение" >> file.txt
+git status
+git add .
+git commit -m "1-е изменение файла file.txt"
+```
 ![1-е изменение](screenshots/11_1.png)
 ![2-е изменение](screenshots/11_2.png)
 
 #### 12. Создание отката коммита.
+```
+git log --oneline
+git reset --hard 98a9ac2
+git push
+```
 ![Откат коммита](screenshots/12.png)
 
 #### 13. Создание ветки для отчёта.
+```
+git checkout -b report
+```
 ![Ветка отчета](screenshots/13.png)
 
 #### 14. Начало оформления отчёта.
-![alt text](image.png)
+![Отчёт](screenshots/14.png)
